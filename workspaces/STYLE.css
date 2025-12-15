@@ -3,49 +3,100 @@ body {
     max-width: 500px;
     margin: 50px auto;
     padding: 0 20px;
+    background: #f1f1f1; /* Subtle background for better glass contrast */
 }
+
 h1 {
     text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
+
 .task-input {
     display: flex;
     margin-bottom: 20px;
+    justify-content: center; /* Center the input and button */
+    gap: 10px;
 }
+
 #task-input {
     flex: 1;
-    padding: 10px;
+    padding: 15px;
     font-size: 20px;
+    border: none;
+    border-radius: 50px; /* Oval shape */
+    background: rgba(255, 255, 255, 0.5); /* Translucent glass look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Glassy blur */
+    outline: none;
+    transition: all 0.3s ease;
 }
+
+#task-input:focus {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 #add-task-btn {
-    padding: 10px 15px;
-    margin-left: 10px;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border: none;
+    border-radius: 50px; /* Oval shape */
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
+
+#add-task-btn:hover {
+    background: rgba(240, 240, 240, 0.9);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
 #task-list {
     list-style: none;
-    padding: 0; /* Fixed typo */
+    padding: 0;
+    margin: 0;
 }
+
 #task-list li {
-    padding: 10px;
-    margin-bottom: 5px;
-    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.5); /* Translucent glass card */
+    border-radius: 50px; /* Oval shape */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
-#task-list li.completed { /* Fixed invalid selector */
+
+#task-list li:hover {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+#task-list li.completed {
     text-decoration: line-through;
     opacity: 0.6;
 }
+
 .delete-btn {
-    background: red;
+    background: rgba(255, 0, 0, 0.6); /* Semi-transparent red */
     color: white;
     border: none;
-    padding: 5px 8px;
+    border-radius: 50px; /* Oval button */
+    padding: 5px 15px;
     cursor: pointer;
-    transition: background 0.3s; /* Added transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
+
 .delete-btn:hover {
-    background: darkred; /* Improved hover state */
+    background: rgba(255, 0, 0, 0.8);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
