@@ -1,96 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Fixed -->
+<html lang="en"> <!-- Fixed -->
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TaskFlow - Enhanced</title>
-        <link rel="stylesheet" href="./STYLE.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Fixed -->
+        <title>Taskflow</title>
+        <link rel="stylesheet" href="./STYLE.css" /> <!-- Fixed -->
     </head>
     <body>
-        <header>
-            <h1>TaskFlow</h1>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#tasks">My Tasks</a></li>
-                    <li><a href="#categories">Categories</a></li>
-                    <li><a href="#analytics">Productivity Insights</a></li>
-                    <li><a href="#automation">Automation Rules</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Home Section -->
-        <section id="home">
-            <h2>Welcome to TaskFlow</h2>
-            <p>Your enhanced task management solution.</p>
-        </section>
-
-        <!-- Tasks Section -->
-        <section id="tasks">
-            <h2>Manage Tasks</h2>
-            <div class="task-input">
-                <input type="text" id="task-title" placeholder="Task Title" />
-                <input type="text" id="task-description" placeholder="Task Description" />
-                <input type="datetime-local" id="task-due-date" placeholder="Due Date & Time" />
-                <select id="task-priority">
-                    <option value="Low">Low</option>
-                    <option value="Medium">Medium</option>
-                    <option value="High">High</option>
-                    <option value="Critical">Critical</option>
-                </select>
-                <button id="add-task-btn">Add Task</button>
-            </div>
-            <ul id="task-list">
-                <!-- Task items dynamically added here -->
-            </ul>
-        </section>
-
-        <!-- Categories Section -->
-        <section id="categories">
-            <h2>Task Categorization</h2>
-            <div class="category-filters">
-                <select id="task-category">
-                    <option value="Work">Work</option>
-                    <option value="Personal">Personal</option>
-                    <option value="Study">Study</option>
-                    <option value="Health">Health</option>
-                </select>
-                <input type="text" id="task-tags" placeholder="Tags (e.g., urgent, school)" />
-                <div>
-                    <button id="filter-btn">Apply Filters</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Productivity Section -->
-        <section id="analytics">
-            <h2>Productivity Insights</h2>
-            <p>Track your task performance and productivity levels:</p>
-            <ul>
-                <li>Tasks completed today: <span id="tasks-completed-today">0</span></li>
-                <li>Average task completion time: <span id="average-completion-time">N/A</span></li>
-                <li>Productivity score: <span id="productivity-score">N/A</span></li>
-                <li>Current streak: <span id="current-streak">0 days</span></li>
-            </ul>
-        </section>
-
-        <!-- Automation Rules Section -->
-        <section id="automation">
-            <h2>Automation Rules</h2>
-            <p>Add or edit automation rules to manage tasks intelligently:</p>
-            <ul>
-                <li>If task is overdue → raise priority</li>
-                <li>If task is marked "work" → remind during work hours only</li>
-                <li>If task is not completed after X days → escalate</li>
-                <!-- More rules to be added dynamically -->
-            </ul>
-        </section>
-
-        <footer>
-            <p>TaskFlow © 2025. All rights reserved.</p>
-        </footer>
-
+        <h1>Taskflow</h1>
+        <div class="task-input">
+            <input type="text" id="task-input" placeholder="Add a new task" />
+            <button id="add-task-btn">Add Task</button>
+        </div>
+        <ul id="task-list"></ul> <!-- Fixed -->
         <script src="./SCRIPT.JS"></script>
     </body>
 </html>
